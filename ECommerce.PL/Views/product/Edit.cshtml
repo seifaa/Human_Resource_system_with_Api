@@ -1,0 +1,67 @@
+﻿@model ECommerce.BLL.Models.ProductVModel
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<form asp-action="Edit" asp-controller="product">
+    <input type="hidden" asp-for="id" />
+    <div class="form-group row">
+        <label asp-for="name" class="col-sm-12 col-md-2 col-form-label">name</label>
+        <div class="col-sm-12 col-md-10">
+            <input class="form-control" type="text" asp-for="name">
+            <span asp-validation-for="name" class="alert-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="price" class="col-sm-12 col-md-2 col-form-label">price</label>
+        <div class="col-sm-12 col-md-10">
+            <input class="form-control" type="text" asp-for="price">
+            <span asp-validation-for="price" class="alert-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="color" class="col-sm-12 col-md-2 col-form-label">color</label>
+        <div class="col-sm-12 col-md-10">
+            <input class="form-control" type="text" asp-for="color">
+            <span asp-validation-for="color" class="alert-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="size" class="col-sm-12 col-md-2 col-form-label">size</label>
+        <div class="col-sm-12 col-md-10">
+            <input class="form-control" type="text" asp-for="size">
+            <span asp-validation-for="size" class="alert-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Quantity" class="col-sm-12 col-md-2 col-form-label">Quantity</label>
+        <div class="col-sm-12 col-md-10">
+            <input class="form-control" type="text" asp-for="Quantity">
+            <span asp-validation-for="Quantity" class="alert-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="describtion" class="col-sm-12 col-md-2 col-form-label">describtion</label>
+        <div class="col-sm-12 col-md-10">
+            <input class="form-control" type="text" asp-for="describtion">
+            <span asp-validation-for="describtion" class="alert-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="ProductUser" class="col-sm-12 col-md-2 col-form-label">Product User</label>
+        <div class="col-sm-12 col-md-10">
+            <input class="form-control" type="text" asp-for="ProductUser">
+            <span asp-validation-for="ProductUser" class="alert-danger"></span>
+        </div>
+    </div>
+
+
+    <button class="btn btn-success" type="submit">Save Changes</button>
+
+
+</form>
+
+
